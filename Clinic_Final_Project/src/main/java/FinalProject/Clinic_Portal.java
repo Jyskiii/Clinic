@@ -9,7 +9,7 @@ import FinalProject.Clinic_Lobby;
 import javax.swing.JOptionPane;
 
 /**
- *
+ * hatdogahgagsgshgagaga
  * @author Acer
  */
 public class Clinic_Portal extends javax.swing.JFrame {

@@ -13,7 +13,11 @@ import FinalProject.Patients_Form;
  */
 public class Clinic_Lobby extends javax.swing.JFrame {
 
-    /**
+    /** hotdog
+     * chicken
+     * siniganggang
+     * 
+     * 
      * Creates new form Clinic_Lobby
      */
     public Clinic_Lobby() {
