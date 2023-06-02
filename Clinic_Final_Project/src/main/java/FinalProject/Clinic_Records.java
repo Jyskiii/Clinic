@@ -207,8 +207,8 @@ public class Clinic_Records extends javax.swing.JFrame {
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
-        Clinic_Lobby CL = new Clinic_Lobby();
-        CL.show();
+        Clinic_Dashboard CD = new Clinic_Dashboard();
+        CD.show();
         
         dispose();
     }//GEN-LAST:event_btnBackActionPerformed
