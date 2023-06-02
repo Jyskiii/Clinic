@@ -5,7 +5,7 @@
 package FinalProject;
 
 /**
- *
+ *hotdog
  * @author admin
  */
 public class B extends javax.swing.JFrame {
