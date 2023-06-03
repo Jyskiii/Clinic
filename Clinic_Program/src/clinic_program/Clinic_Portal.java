@@ -7,7 +7,7 @@ package clinic_program;
 import javax.swing.JOptionPane;
 
 /**
- * Hotdog
+ * 
  * @author Acer
  */
 public class Clinic_Portal extends javax.swing.JFrame {
