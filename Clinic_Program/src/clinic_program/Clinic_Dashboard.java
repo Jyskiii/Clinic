@@ -234,7 +234,10 @@ public class Clinic_Dashboard extends javax.swing.JFrame {
 
     private void btnClinicRecordsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClinicRecordsActionPerformed
         // TODO add your handling code here:
+        Records R = new Records();
+        R.show();
         
+        dispose();
     }//GEN-LAST:event_btnClinicRecordsActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

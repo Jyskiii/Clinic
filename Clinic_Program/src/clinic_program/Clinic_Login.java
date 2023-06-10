@@ -32,12 +32,12 @@ public class Clinic_Login extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnEnter = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         tfUsername = new javax.swing.JTextField();
         pfPassword = new javax.swing.JPasswordField();
-        cbShowPassword = new javax.swing.JCheckBox();
+        cbPassword = new javax.swing.JCheckBox();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -80,13 +80,13 @@ public class Clinic_Login extends javax.swing.JFrame {
                 .addGap(0, 7, Short.MAX_VALUE))
         );
 
-        jButton3.setBackground(new java.awt.Color(0, 153, 255));
-        jButton3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Enter");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnEnter.setBackground(new java.awt.Color(0, 153, 255));
+        btnEnter.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        btnEnter.setForeground(new java.awt.Color(255, 255, 255));
+        btnEnter.setText("Enter");
+        btnEnter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnEnterActionPerformed(evt);
             }
         });
 
@@ -114,13 +114,13 @@ public class Clinic_Login extends javax.swing.JFrame {
             }
         });
 
-        cbShowPassword.setBackground(new java.awt.Color(0, 153, 255));
-        cbShowPassword.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        cbShowPassword.setForeground(new java.awt.Color(255, 255, 255));
-        cbShowPassword.setText("Show Password");
-        cbShowPassword.addActionListener(new java.awt.event.ActionListener() {
+        cbPassword.setBackground(new java.awt.Color(0, 153, 255));
+        cbPassword.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        cbPassword.setForeground(new java.awt.Color(255, 255, 255));
+        cbPassword.setText("Show Password");
+        cbPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbShowPasswordActionPerformed(evt);
+                cbPasswordActionPerformed(evt);
             }
         });
 
@@ -149,7 +149,7 @@ public class Clinic_Login extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(cbShowPassword)
+                                    .addComponent(cbPassword)
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(pfPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(tfUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -157,7 +157,7 @@ public class Clinic_Login extends javax.swing.JFrame {
                                 .addContainerGap(27, Short.MAX_VALUE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jButton3)
+                                .addComponent(btnEnter)
                                 .addGap(78, 78, 78)
                                 .addComponent(jButton1)
                                 .addGap(83, 83, 83))))
@@ -187,10 +187,10 @@ public class Clinic_Login extends javax.swing.JFrame {
                     .addComponent(pfPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cbShowPassword)
+                .addComponent(cbPassword)
                 .addGap(16, 16, 16)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEnter, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1))
                 .addGap(75, 75, 75))
         );
@@ -222,27 +222,29 @@ public class Clinic_Login extends javax.swing.JFrame {
         CD.show();
         
         dispose();
-    }
+    }   else {
+            JOptionPane.showMessageDialog(null, "Your Username or Password is wrong. Please Try Again.");
+        }
         
     }//GEN-LAST:event_tfUsernameActionPerformed
 
-    private void cbShowPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbShowPasswordActionPerformed
+    private void cbPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPasswordActionPerformed
         // TODO add your handling code here:
-        if (cbShowPassword.isSelected()){
+        if (cbPassword.isSelected()){
             pfPassword.setEchoChar((char)0);
         }
         else {
             pfPassword.setEchoChar('*');
         }
-    }//GEN-LAST:event_cbShowPasswordActionPerformed
+    }//GEN-LAST:event_cbPasswordActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnterActionPerformed
         // TODO add your handling code here:
         Clinic_Dashboard CD = new Clinic_Dashboard();
         CD.show();
         
         dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnEnterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -280,9 +282,9 @@ public class Clinic_Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBox cbShowPassword;
+    private javax.swing.JButton btnEnter;
+    private javax.swing.JCheckBox cbPassword;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;

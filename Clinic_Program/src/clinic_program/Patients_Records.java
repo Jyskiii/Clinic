@@ -42,10 +42,10 @@ public class Patients_Records extends javax.swing.JFrame {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 try {
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/clinicrecords","root", "");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/clinicdatarecords","root", "");
                     stm = con.createStatement();
                     
-                    sql = "INSERT INTO records (`Name`, `Type of Visitor`, `ID Number`, `Contact Number`, `Purpose of Visitation`, `Nurse's Remarks`, `Evaluated By`) VALUES ('"+cname+"','"+cvisitor+"','"+cid+"','"+ccontact+"','"+cpurpose+"','"+cremarks+"','"+cevaluated+"')";
+                    sql = "INSERT INTO clinicrecords (`Name`, `Type of Visitor`, `ID Number`, `Contact Number`, `Purpose of Visitation`, `Nurse's Remarks`,) VALUES ('"+cname+"','"+cvisitor+"','"+cid+"','"+ccontact+"','"+cpurpose+"','"+cremarks+"')";
                         stm.executeUpdate(sql);
 
                         JOptionPane.showMessageDialog(null, "Record Has Been Saved.");
